@@ -1,4 +1,4 @@
-################################################################################
+###############################################################################
 # Copyright (c) 2018 TESIS GmbH
 # All rights reserved. This program and the accompanying materials
 # are made available under the terms of the Eclipse Public License v2.0
@@ -7,28 +7,14 @@
 #
 # Contributors:
 #  Frederic Chucholowski (TESIS GmbH) - initial implementation
+#  Stefan Lietzau (TESIS GmbH) - Create ROS2 compatible package
 ###############################################################################
 
-# the current x-,y- and z-position of the vehicle reference point in the world system
-# the vehicle reference point is located at the center of the front axle
-Vector3 position
+# Position and Orientation in space
+geometry_msgs/Pose position
 
-# the current velocity with respect to the world system in vehicle coordinates
-Vector3 velocity
+# the current velocity (linear and angular) with respect to the world system in vehicle coordinates
+geometry_msgs/Twist twist
 
-# the current acceleration with respect to the world system in vehicle coordinates
-Vector3 acceleration
-
-# the current yaw angle [rad]
-float64 yawAngle
-# the current pitch angle [rad]
-float64 pitchAngle
-# the current roll angle [rad]
-float64 rollAngle
-
-# the current yaw rate [rad/s]
-float64 yawRate
-# the current pitch rate [rad/s]
-float64 pitchRate
-# the current roll rate [rad/s]
-float64 rollRate
+# the current acceleration (linear and angular) with respect to the world system in vehicle coordinates
+geometry_msgs/Accel acceleration
