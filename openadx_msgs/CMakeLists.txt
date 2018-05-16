@@ -10,12 +10,15 @@ find_package(ament_cmake REQUIRED)
 # find the ROS message code generators
 find_package(rosidl_default_generators REQUIRED)
 find_package(builtin_interfaces REQUIRED)
+find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
 # declare the message files to generate code for
 set(msg_files
     "msg/VehicleControl.msg"
     "msg/VehicleState.msg"
+    "msg/DetectedObject.msg"
+    "msg/DetectedObjectList.msg"
     )
 
 # declare the service files to generate code for

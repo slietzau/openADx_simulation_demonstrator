@@ -10,11 +10,19 @@
 #  Stefan Lietzau (TESIS GmbH) - Create ROS2 compatible package
 ###############################################################################
 
-# gear constants
-int32 GEAR_P=0
-int32 GEAR_N=1
-int32 GEAR_D=2
-int32 GEAR_R=3
+# ###############################################################################
+# constants
+
+# don't change the gear
+int32 GEAR_KEEP=-1
+# parking gear
+int32 GEAR_PARK=0
+# neutral gear
+int32 GEAR_NEUTRAL=1
+# drive gear
+int32 GEAR_DRIVE=2
+# reversing gear
+int32 GEAR_REVERSE=3
 
 
 # intended accelerator pedal position [0, 1]
